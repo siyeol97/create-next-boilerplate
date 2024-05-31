@@ -2,7 +2,9 @@
   "name": "@siyeol97/create-next-boilerplate",
   "version": "1.0.0",
   "description": "Next.js 14 app router boilerplate with Zustand and React Query",
-  "main": "index.js",
+  "bin": {
+    "create-next-boilerplate": "./bin/create-next-boilerplate.js"
+  },
   "keywords": [
     "nextjs",
     "zustand",
@@ -11,5 +13,19 @@
     "setup"
   ],
   "author": "siyeol97",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/siyeol97/nextjs-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/siyeol97/create-next-boilerplate/issues",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/siyeol97/create-next-boilerplate.git"
+    }
+  },
+  "type": "module",
+  "dependencies": {
+    "execa": "^9.1.0",
+    "inquirer": "^9.2.22",
+    "simple-git": "^3.24.0"
+  }
 }
