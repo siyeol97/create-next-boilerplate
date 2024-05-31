@@ -7,7 +7,7 @@
 - **Next.js** 14 app router
 - **Zustand** state management
 - **React Query** for data fetching
-- Pre-configured Next.js boilerplate
+- Pre-configured with Airbnb style **ESLint and Prettier**
 
 ## Installation
 
