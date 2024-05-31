@@ -1,0 +1,15 @@
+{
+  "name": "@siyeol97/create-next-boilerplate",
+  "version": "1.0.0",
+  "description": "Next.js 14 app router boilerplate with Zustand and React Query",
+  "main": "index.js",
+  "keywords": [
+    "nextjs",
+    "zustand",
+    "react-query",
+    "boilerplate",
+    "setup"
+  ],
+  "author": "siyeol97",
+  "license": "MIT"
+}
