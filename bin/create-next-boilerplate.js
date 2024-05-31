@@ -4,7 +4,7 @@ import inquirer from 'inquirer';
 import simpleGit from 'simple-git';
 import { execa } from 'execa';
 import path from 'path';
-import fs from 'fs';
+import fs, { rmSync } from 'fs';
 
 const REPO_URL = 'https://github.com/siyeol97/nextjs-boilerplate.git';
 
@@ -34,6 +34,10 @@ async function cloneRepo(projectName) {
   console.log('Cloning repository...');
   await git.clone(REPO_URL, targetDir);
   console.log('Repository cloned.');
+
+  const gitDir = path.join(targetDir, '.git');
+  rmSync(gitDir, { recursive: true, force: true });
+  console.log('.git directory removed.');
 
   const packageJsonPath = path.join(targetDir, 'package.json');
   const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
