@@ -6,7 +6,7 @@ import { execa } from 'execa';
 import path from 'path';
 import fs from 'fs';
 
-const REPO_URL = 'https://github.com/YOUR_USERNAME/nextjs-boilerplate.git';
+const REPO_URL = 'https://github.com/siyeol97/nextjs-boilerplate.git';
 
 async function promptProjectName() {
   const answers = await inquirer.prompt([
