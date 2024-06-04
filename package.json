@@ -1,6 +1,6 @@
 {
   "name": "create-next-boilerplate",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Next.js 14 app router boilerplate with Zustand and React Query",
   "bin": {
     "create-next-boilerplate": "./bin/create-next-boilerplate.js"
